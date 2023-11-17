@@ -1,0 +1,6 @@
+#### toady is my first pgm to practise shell script
+#!/bin/bash
+
+echo "this is my first shell sciprt pgm"
+
+echo "thanks for running the script"
