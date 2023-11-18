@@ -18,7 +18,7 @@ else
 
 fi
 
-apt-get installlll git -y 
+apt-get install git -y 
 
 if [ $? -ne 0 ]
 
