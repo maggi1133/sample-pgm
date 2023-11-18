@@ -10,8 +10,8 @@ if [ $USERID -ne 0 ]
 
 then 
 
-echo "this portion is execute.........."
-
+echo "this portion is failure.........."
+exit 1  # here we 1 to 127 expect 0
 else
  
  echo "shell script is executed..............................."
