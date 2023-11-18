@@ -2,10 +2,15 @@
 
 echo "we enter the shell script pgm"
 
-Person1=nani
-Person2=maggi
+Person1=magi
+Person2=yupee
 
-echo "we enter the first person name is: $Person1"
+echo "$Person1 hi to $Person2"
 
-echo "we enter the first second name is: $Person2"
+echo "$Person2 hi to $Person1"
+
+echo "$Person1 say how are you to $Person2"
+
+echo "$Person2  iam fine $Person1"
+
 
