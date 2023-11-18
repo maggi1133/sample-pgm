@@ -18,7 +18,7 @@ else
 
 fi
 
-yum installlll git -y "intall git suceesfully"
+apt-get installlll git -y 
 
 
 
