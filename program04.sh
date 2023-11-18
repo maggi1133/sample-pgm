@@ -20,5 +20,16 @@ fi
 
 apt-get installlll git -y 
 
+if [ $? -ne 0 ]
+
+then 
+
+echo "this block is execute"
+
+else
+
+echo "this script is executed"
+fi
+
 
 
