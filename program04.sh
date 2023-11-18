@@ -6,7 +6,7 @@ USERID=$(id -u)
 
 # if id -u means it show 0 
 
-if [ $USERID -ne 10 ]
+if [ $USERID -ne 0 ]
 
 then 
 
