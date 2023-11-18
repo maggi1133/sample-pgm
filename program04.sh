@@ -18,13 +18,15 @@ else
 
 fi
 
+apt-get installlll git -y
+
 apt-get install git -y 
 
 if [ $? -eq 0 ]
 
 then 
 
-echo "this block is execute"
+echo "this is failure"
 exit 1
 else
 
