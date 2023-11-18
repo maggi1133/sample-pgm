@@ -17,3 +17,8 @@ else
  echo "shell script is executed..............................."
 
 fi
+
+yum installlll git -y "intall git suceesfully"
+
+
+
