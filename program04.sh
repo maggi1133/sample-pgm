@@ -20,12 +20,12 @@ fi
 
 apt-get install git -y 
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 
 then 
 
 echo "this block is execute"
-
+exit 1
 else
 
 echo "this script is executed"
