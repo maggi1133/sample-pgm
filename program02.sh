@@ -7,5 +7,5 @@ Num2=$2
 
 echo "$1 say hi to $2"
 
-echi "$2 bye to $1"
+echo "$2 bye to $1"
 
