@@ -2,19 +2,25 @@
 
 # i want to print the date and store the log file and print the script name
 
-Date=$(date)
+Date=$(date +%F)
+Time=
 Script_Name=$0
 Log_file=/tmp/$Script_Name-$Date.log
 
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
 User_id=$(id -u)
+
 Validate(){
 
 if [ $1 -ne 0 ]
  then    
-    echo "$2: the script is run under the root user"
+    echo -e "$2: $R the script is run under $N the root user $N"
     exit 1
  else
-    echo "$2 script is executed succesfully.............."
+    echo  -e "$2 $G script is executed $R succesfully $N .............."
 fi
 
 }
