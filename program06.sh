@@ -12,7 +12,7 @@ echo "user id is $USERID"
 
 # using loops 
 
-if [ $USERID -eq 0 ]
+if [ $USERID -le 0 ]
 then
   echo "this git install is failure............................"
 else
