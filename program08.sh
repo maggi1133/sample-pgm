@@ -20,13 +20,13 @@ fi
 }
 
 
-yum install git -y 
+yum install git -y &>>$Log_file
 
-Validate $? "git is sucessfully installed &>>$Log_file"
+Validate $? "git is sucessfully installed"
 
-yum install postfix -y
+yum install postfix -y &>>$Log_file
 
-Validate $? "postfix is successfully installed &>>$Log_file"
+Validate $? "postfix is successfully installed"
 
 
 
