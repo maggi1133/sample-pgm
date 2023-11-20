@@ -20,9 +20,9 @@ else
 fi
 
 
-yum installlll java -y
 
-yum install java-1.8.0-openjdk
+
+yum install amazon-linux-extras install java-openjdk11
 
 if [ $? -gt 0 ]
 then
