@@ -8,6 +8,16 @@ echo "we install git software package in theis session"
 
 USERID=$(id -u)
 
+validate(){
+
+    if [ $1 -gt 0 ]
+then
+  echo "install jnginx "
+else
+  echo "install failure"
+fi
+}
+
 echo "user id is $USERID"
 
 # using loops 
@@ -20,21 +30,9 @@ else
 fi
 
 
-yum installttttt nginx -y
+yum installttttt jenkins -y
 
-if [ $? -gt 0 ]
-then
-  echo "install jnginx "
-else
-  echo "install failure"
-fi
+yum install jenkins -y
 
-yum install nginx -y
 
-if [ $? -gt 0 ]
-then
-  echo "install jnginx version sucessfully"
-else
-  echo "install nginx verion failure"
-fi
 
