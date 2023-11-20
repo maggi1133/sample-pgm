@@ -18,3 +18,15 @@ then
 else
    echo "this git install is sucess..."
 fi
+
+
+yum installlll git -y
+
+if [ $? -gt 0 ]
+then
+  echo "install git version sucessfully"
+else
+  echo "install git verion failure"
+fi
+
+yum install git -y
