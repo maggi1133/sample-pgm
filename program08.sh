@@ -7,6 +7,15 @@ Time=
 Script_Name=$0
 Log_file=/tmp/$Script_Name-$Date.log
 
+Var1=@1
+Var2=@2
+
+echo "to print $Var1"
+echo "to print $Var2"
+echo "to print script name $0"
+echo "to print no of varaibles $@"
+echo "total no of var is passed $#"
+
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
@@ -17,10 +26,10 @@ Validate(){
 
 if [ $1 -ne 0 ]
  then    
-    echo -e "$2: $R the script is,  $G run under the root user $N"
+    echo -e "$2: the script is,  $G run under the root user $N"
     exit 1
  else
-    echo  -e "$2: $G script is, $G executed succesfully $N .............."
+    echo  -e "$2:  script is, $R executed succesfully ..............$N"
 fi
 
 }
