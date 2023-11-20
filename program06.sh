@@ -22,12 +22,12 @@ fi
 
 
 
-yum install java-1.8.0-openjdk
+yum install nginx -y
 
 if [ $? -gt 0 ]
 then
-  echo "install java version sucessfully"
+  echo "install jnginx version sucessfully"
 else
-  echo "install java verion failure"
+  echo "install nginx verion failure"
 fi
 
