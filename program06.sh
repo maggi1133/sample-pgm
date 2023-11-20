@@ -10,3 +10,11 @@ USERID=$(id -u)
 
 echo "user id is $USERID"
 
+# using loops 
+
+if [ $USERID -ne 0]
+then
+  echo "this git install is failure............................"
+else
+   echo "this git install is sucess..."
+fi
