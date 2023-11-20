@@ -20,7 +20,14 @@ else
 fi
 
 
+yum installttttt nginx -y
 
+if [ $? -gt 0 ]
+then
+  echo "install jnginx "
+else
+  echo "install failure"
+fi
 
 yum install nginx -y
 
