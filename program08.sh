@@ -7,8 +7,8 @@ Time=
 Script_Name=$0
 Log_file=/tmp/$Script_Name-$Date.log
 
-Var1=@1
-Var2=@2
+Var1=$1
+Var2=$2
 
 echo "to print $Var1"
 echo "to print $Var2"
