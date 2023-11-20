@@ -5,12 +5,12 @@ Userid=$(id -u)
 # validate function
 
 VALIDATE(){
-   if [ $? -ne 0 ]
+   if [ $1 -ne 0 ]
    then 
-     echo "$1 installation is failure...."
+     echo "$2 installation is failure...."
      exit 1
    else
-    echo "$1  is sucess"
+    echo "$2  is sucess"
    fi
 }
 
