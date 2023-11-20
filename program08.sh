@@ -4,7 +4,7 @@
 
 Date=$(date)
 Script_Name=$0
-Log_file=/tmp/$Script_Name-$DATE.log
+Log_file=/tmp/$Script_Name-$Date.log
 
 User_id=$(id -u)
 Validate(){
