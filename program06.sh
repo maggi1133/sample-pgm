@@ -20,13 +20,14 @@ else
 fi
 
 
-yum installlll git -y
+yum installlll java -y
+
+yum install java-1.8.0-openjdk
 
 if [ $? -gt 0 ]
 then
-  echo "install git version sucessfully"
+  echo "install java version sucessfully"
 else
-  echo "install git verion failure"
+  echo "install java verion failure"
 fi
 
-yum install git -y
