@@ -17,10 +17,10 @@ Validate(){
 
 if [ $1 -ne 0 ]
  then    
-    echo -e "$2: $R the script is run under $N the root user $N"
+    echo -e "$2: $R the script is $R $G run under the root$G user $N"
     exit 1
  else
-    echo  -e "$2 $G script is executed $R succesfully $N .............."
+    echo  -e "$2: $G script is $G executed succesfully $N .............."
 fi
 
 }
