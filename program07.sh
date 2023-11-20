@@ -2,6 +2,8 @@
 
 Userid=$(id -u)
 
+# validate function
+
 VALIDATE(){
    if [ $? -ne 0 ]
    then 
