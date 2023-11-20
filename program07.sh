@@ -7,10 +7,10 @@ Userid=$(id -u)
 VALIDATE(){
    if [ $1 -ne 0 ]
    then 
-     echo "installation is failure...."
+     echo "$2 installation is failure...."
      exit 1
    else
-    echo "installation is sucess"
+    echo "$2  is sucess"
    fi
 }
 
