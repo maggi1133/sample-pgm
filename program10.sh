@@ -66,7 +66,7 @@ do
 
    if [ $? -ne 0 ]
    then
-        echo -e " $y $i is not installed, lets install it $N"
+        echo  "$i is not installed, lets install it"
         yum install $i -y &>>$Logfile
         Validate $? "$i"
     else
