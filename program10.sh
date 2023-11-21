@@ -72,5 +72,5 @@ do
     else
        echo -e "$G $i is install already $N"
     fi
-
+done
     
