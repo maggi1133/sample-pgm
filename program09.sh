@@ -14,9 +14,9 @@ Var1=$1
 Var2=$2
 Var3=$3
 
-echo  -e "tp print the first variable is $R sucess: $Var1 $N"
+echo  -e "tp print the first variable is sucess: $Var1"
 
-echo -e "tp print the first variable is $B sucess: $Var2 $N" 
+echo -e "tp print the first variable is sucess: $Var2" 
 
 echo -e "tp print the first variable is sucess: $Var3"
 
