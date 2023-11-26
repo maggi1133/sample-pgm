@@ -35,27 +35,27 @@ User_id=$(id -u)
         echo -e " $Y installation sucessfully $N"
   fi
 
- cp /home/ec2-user/mongo.repo/   /etc/yum.repos.d/mongo.repo &>>$Log_File
+ cp /home/ec2-user/mongo.repo/   /etc/yum.repos.d/mongo.repo &>> $Log_File
 
  Validate $? "copy the path in to that repo"
 
-yum install mongodb-org -y &>>$Log_File
+yum install mongodb-org -y &>> $Log_File
 
 Validate $? "installing mongodb"
 
-systemctl enable mongod &>>$Log_File
+systemctl enable mongod &>> $Log_File
 
 Validate $? "enable the service"
 
-systemctl start mongod &>>$Log_File
+systemctl start mongod &>> $Log_File
 
 Validate $? "restarting the service"
 
-sed -i 's/127.0.0.1/0.0.0.0/'  /etc/mongod.conf &>>$Log_File
+sed -i 's/127.0.0.1/0.0.0.0/'  /etc/mongod.conf &>> $Log_File
 
 Validate $? "allow all the ports"
 
 
-systemctl restart mongod &>>$Log_File
+systemctl restart mongod &>> $Log_File
 
 Validate $? "restart the mongod service"
