@@ -35,7 +35,7 @@ User_id=$(id -u)
         echo -e " $Y installation sucessfully $N"
   fi
 
- cp /home/ec2-user/mongo.repo/   /etc/yum.repos.d/mongo.repo &>> $Log_File
+ cp mongo.repo/   /etc/yum.repos.d/mongo.repo &>> $Log_File
 
  Validate $? "copy the path in to that repo"
 
