@@ -4,5 +4,5 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-echo -e " $R we written to implement roboshop shell $N"
+echo -e " $R we written to implement $N  $G roboshop shell $N"
 
